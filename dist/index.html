@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="format-detection" content="telephone=no">
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="img/fav/android-chrome-192x192.png">
+   <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+   <link rel="icon" type="image/x-icon" href="img/fav/favicon.ico">
+   <!-- Meta Description -->
+   <meta name="description" content="">
+   <meta property="og:title" content="">
+   <meta property="og:description" content="">
+   <meta property="og:url" content="">
+   <meta property="og:type" content="website">
+   <!-- Styles -->
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Главная</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class="header__body container">
+      <div class="header__top">
+         <div class="header__worktime">Пн-Пт: 09:00-18:00</div>
+         <hr>
+         <div class="header__contacts">
+            <a href="mailto:info@nfcase.ru" class="header__email">info@nfcase.ru</a>
+            <a href="tel:+74957971915" class="header__phone">+7 (495) 797-19-15</a>
+            <div class="header__socials">
+               <a href="" target="_blank" class="header__social" aria-label="Max мессенджер">
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#icon-max"></use>
+                  </svg>
+               </a>
+               <a href="" target="_blank" class="header__social" aria-label="Telegram">
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+                  </svg>
+               </a>
+               <a href="" target="_blank" class="header__social" aria-label="Whatsapp">
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+                  </svg>
+               </a>
+            </div>
+         </div>
+         <button type="button" class="header__callback open-popup" data-popup="callback-popup">
+            Перезвоните мне</button>
+      </div>
+
+      <div class="header__main">
+         <a href="index.html" class="header__logo" aria-label="Главная страница">
+            <img src="img/logo.svg" width="208" height="44" alt="logo">
+         </a>
+
+         <div class="header__main-phone">
+            <a href="tel:+74957971915" class="header__phone">
+               <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+               </svg>
+            </a>
+         </div>
+
+         <div class="header__actions">
+            <button type="button" class="header__toggle -catalog">
+               <div class="header__toggle-icon">
+                  <svg class="-burger">
+                     <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+                  </svg>
+                  <svg class="-close">
+                     <use xlink:href="img/icons/icons.svg#icon-close-short"></use>
+                  </svg>
+               </div>
+               Каталог
+            </button>
+            <button type="button" class="header__toggle -search open-popup" data-popup="search-popup"
+               aria-label="Открыть поиск">
+               <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-glass"></use>
+               </svg>
+            </button>
+         </div>
+
+         <div class="header__menu menu">
+            <div class="menu__icon"><span></span></div>
+            <nav class="menu__body">
+               <div class="menu__body-head">
+                  <div class="menu__logo">
+                     <img src="img/logo-dark.svg" width="105" height="22" alt="logo">
+                  </div>
+                  <div class="menu__actions">
+                     <button type="button" class="menu__search open-popup" data-popup="search-popup">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-glass"></use>
+                        </svg>
+                     </button>
+                     <button type="button" class="menu__close">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-close"></use>
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+               <ul class="menu__list">
+                  <li class="menu__item -catalog">
+                     <a href="" class="menu__link">
+                        Каталог
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-chevron"></use>
+                        </svg>
+                     </a>
+                     <ul class="menu__sublist -catalog">
+                        <li class="menu__subitem">
+                           <button type="button" class="menu__subback">
+                              <img src="img/icons/back.svg" width="22" height="8" alt="back">
+                              Назад
+                           </button>
+                        </li>
+                        <li class="menu__subitem">
+                           <a href="" class="menu__sublink">
+                              Кейсы и кофры
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-chevron"></use>
+                              </svg>
+                           </a>
+                           <ul class="menu__subsublist">
+                              <li class="menu__subsubitem">
+                                 <button type="button" class="menu__subsubback">
+                                    <img src="img/icons/back.svg" width="22" height="8" alt="back">
+                                    Назад
+                                 </button>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для мидицинского оборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для музыкальных инструментов</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для музыкального оборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для светового оборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для видео- и фотооборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для ТВ и LED-экранов</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для приборов и оборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для образцов продукции</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для квадрокоптеров</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для приборов и оборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для образцов продукции</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для компьютерной техники</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для оружия</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для кубков</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для спортинвентаря</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для военного оборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для театрального реквизита</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для рэкового оборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для приборов и оборудования</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Алюминиевые кейсы</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Фанерные кейсы</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Пластиковые кейсы</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Цветные кейсы</a>
+                              </li>
+                           </ul>
+                        </li>
+
+                        <li class="menu__subitem">
+                           <a href="" class="menu__sublink">
+                              Ложементы
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-chevron"></use>
+                              </svg>
+                           </a>
+                           <ul class="menu__subsublist">
+                              <li class="menu__subsubitem">
+                                 <button type="button" class="menu__subsubback">
+                                    <img src="img/icons/back.svg" width="22" height="8" alt="back">
+                                    Назад
+                                 </button>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Бюджетные</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для перевозки</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Для выставок и презентаций</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Одноразовые</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Цветные</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Брендированные (с гравировкой)</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Флокированные</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">НПЭ (несшитый пенополиэтилен)</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">ППЭФ (пенополиэтилен физ. сшит.)</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">ЭВА (этиленвинилацетат)</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">ППУ (пенополиуретан/поролон)</a>
+                              </li>
+                           </ul>
+                        </li>
+
+                        <li class="menu__subitem">
+                           <a href="" class="menu__sublink">
+                              Фурнитура
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-chevron"></use>
+                              </svg>
+                           </a>
+                           <ul class="menu__subsublist">
+                              <li class="menu__subsubitem">
+                                 <button type="button" class="menu__subsubback">
+                                    <img src="img/icons/back.svg" width="22" height="8" alt="back">
+                                    Назад
+                                 </button>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Замки</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Ручки</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Петли и опоры</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Уголки</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Колёса</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Ножки</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Профиль</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Скобы</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Рэковые крепления</a>
+                              </li>
+                              <li class="menu__subsubitem">
+                                 <a href="" class="menu__subsublink">Телескопические и выдвижные стойки</a>
+                              </li>
+                           </ul>
+                        </li>
+
+                        <div class="menu__subitem">
+                           <a href="" class="menu__catalog">Весь каталог</a>
+                        </div>
+                     </ul>
+
+                  </li>
+
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Портфолио</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Производство</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">
+                        О компании
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-chevron"></use>
+                        </svg>
+                     </a>
+                     <ul class="menu__sublist">
+                        <li class="menu__subitem">
+                           <button type="button" class="menu__subback">
+                              <img src="img/icons/back.svg" width="22" height="8" alt="back">
+                              Назад
+                           </button>
+                        </li>
+                        <li class="menu__subitem">
+                           <a href="" class="menu__sublink">О компании</a>
+                        </li>
+                        <li class="menu__subitem">
+                           <a href="" class="menu__sublink">Документы</a>
+                        </li>
+                        <li class="menu__subitem">
+                           <a href="" class="menu__sublink">Доставка</a>
+                        </li>
+                        <li class="menu__subitem">
+                           <a href="" class="menu__sublink">Блог</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Контакты</a>
+                  </li>
+               </ul>
+               <div class="menu__info">
+                  <div class="menu__worktime">Пн-Пт: 09:00-18:00</div>
+                  <a href="mailto:info@nfcase.ru" class="menu__contact">info@nfcase.ru</a>
+                  <a href="tel:+74957971915" class="menu__contact">+7 (495) 797-19-15</a>
+                  <div class="menu__socials">
+                     <a href="" target="_blank" class="menu__social" aria-label="Max мессенджер">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-max"></use>
+                        </svg>
+                     </a>
+                     <a href="" target="_blank" class="menu__social" aria-label="Telegram">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+                        </svg>
+                     </a>
+                     <a href="" target="_blank" class="menu__social" aria-label="Whatsapp">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-whatsapp"></use>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="menu__buttons">
+                  <button type="button" class="menu__callback">Перезвоните мне</button>
+                  <a href="" class="menu__calculate">Рассчитать кейс</a>
+               </div>
+            </nav>
+         </div>
+
+         <div class="header__buttons">
+            <a href="" class="header__button">Рассчитать кейс</a>
+         </div>
+      </div>
+   </div>
+</header>
+      <main>
+
+         <section class="hero" data-theme="light">
+            <div class="hero__body container">
+               <div class="hero__info">
+                  <h1 class="hero__title">Надёжные кейсы и кофры под ваше оборудование</h1>
+                  <div class="hero__advantages">
+                     <div class="hero__advantage">
+                        <img src="img/icons/delivery.svg" width="36" height="36" alt="delivery car">
+                        Доставка по всей России
+                     </div>
+                     <div class="hero__advantage">
+                        <img src="img/icons/shield.svg" width="36" height="36" alt="delivery car">
+                        Работаем более 10 лет
+                     </div>
+                  </div>
+                  <div class="hero__buttons">
+                     <a href="" class="btn">Как выбрать кейс</a>
+                  </div>
+               </div>
+            </div>
+            <div class="hero__image">
+               <picture>
+                  <source media="(max-width: 767px)" srcset="img/hero-1-mob.avif">
+                  <img src="img/hero-1.avif" width="1500" height="1000" alt="case">
+               </picture>
+            </div>
+         </section>
+
+         <section class="section-cases" data-theme="dark">
+            <div class="section-cases__body container section-padding">
+               <div class="section-cases__aside">
+                  <div class="section-cases__aside-wrapper">
+                     <h2 class="section-cases__title section-title">Делаем любые кейсы</h2>
+                     <p class="section-cases__subtitle section-subtitle">
+                        Производим надежные кейсы и кофры под любые цели, чтобы обеспечить сохранность вашего
+                        оборудования при транспортировке
+                     </p>
+                     <div class="section-cases__button">
+                        <a href="" class="btn">Все категории</a>
+                     </div>
+                     <div class="section-cases__frame">
+                        <div class="section-cases__video">
+                           <div class="section-cases__canvas"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="section-cases__main">
+                  <div class="section-cases__cards">
+                     <a href="" class="section-cases__card">
+                        <h3 class="section-cases__card-name">Промышленность</h3>
+                        <div class="section-cases__card-image">
+                           <img src="img/case-previews/cat-image-1.avif" width="385" height="364" alt="image">
+                        </div>
+                        <div class="section-cases__card-arrow">
+                           <span class="arrow"></span>
+                        </div>
+                     </a>
+                     <a href="" class="section-cases__card">
+                        <h3 class="section-cases__card-name">Коммерция</h3>
+                        <div class="section-cases__card-image">
+                           <img src="img/case-previews/cat-image-2.avif" width="385" height="364" alt="image">
+                        </div>
+                        <div class="section-cases__card-arrow">
+                           <span class="arrow"></span>
+                        </div>
+                     </a>
+                     <a href="" class="section-cases__card">
+                        <h3 class="section-cases__card-name">Шоу-бизнес</h3>
+                        <div class="section-cases__card-image">
+                           <img src="img/case-previews/cat-image-3.avif" width="385" height="364" alt="image">
+                        </div>
+                        <div class="section-cases__card-arrow">
+                           <span class="arrow"></span>
+                        </div>
+                     </a>
+                     <a href="" class="section-cases__card">
+                        <h3 class="section-cases__card-name">Медицина</h3>
+                        <div class="section-cases__card-image">
+                           <img src="img/case-previews/cat-image-4.avif" width="385" height="364" alt="image">
+                        </div>
+                        <div class="section-cases__card-arrow">
+                           <span class="arrow"></span>
+                        </div>
+                     </a>
+                     <a href="" class="section-cases__card">
+                        <h3 class="section-cases__card-name">Оборонный комплекс</h3>
+                        <div class="section-cases__card-image">
+                           <img src="img/case-previews/cat-image-5.avif" width="385" height="364" alt="image">
+                        </div>
+                        <div class="section-cases__card-arrow">
+                           <span class="arrow"></span>
+                        </div>
+                     </a>
+                     <a href="" class="section-cases__card">
+                        <h3 class="section-cases__card-name">Наука</h3>
+                        <div class="section-cases__card-image">
+                           <img src="img/case-previews/cat-image-6.avif" width="385" height="364" alt="image">
+                        </div>
+                        <div class="section-cases__card-arrow">
+                           <span class="arrow"></span>
+                        </div>
+                     </a>
+                     <a href="" class="section-cases__card">
+                        <h3 class="section-cases__card-name">Искусство и музеи</h3>
+                        <div class="section-cases__card-image">
+                           <img src="img/case-previews/cat-image-7.avif" width="385" height="364" alt="image">
+                        </div>
+                        <div class="section-cases__card-arrow">
+                           <span class="arrow"></span>
+                        </div>
+                     </a>
+                     <a href="" class="section-cases__card">
+                        <h3 class="section-cases__card-name">IT</h3>
+                        <div class="section-cases__card-image">
+                           <img src="img/case-previews/cat-image-8.avif" width="385" height="364" alt="image">
+                        </div>
+                        <div class="section-cases__card-arrow">
+                           <span class="arrow"></span>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="section-cases__more">
+                     <a href="" class="btn">Все категории</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="" style="height: 100vh; background: #ccc;"></section>
+
+      </main>
+      <footer class="footer">
+   <div class="footer__body container">
+
+   </div>
+</footer>
+   </div>
+   <!-- popup-->
+<div id="" class=" popup" role="dialog" aria-modal="true">
+   <div class="popup__body">
+      <div class="popup__close"></div>
+   </div>
+</div>
+
+<!-- search popup-->
+<div id="search-popup" class="search-popup popup" role="dialog" aria-modal="true">
+   <div class="search-popup__body popup__body container">
+      <div class="search-popup__title">Поиск по сайту</div>
+      <div class="search-popup__subtitle">Что вы хотите найти?</div>
+      <form class="search-popup__content">
+         <div class="search-popup__wrapper">
+            <div class="search-popup__area">
+               <input type="search" name="search" required>
+            </div>
+            <a href="" class="search-popup__button">Поиск</a>
+         </div>
+         <button type="button" class="search-popup__close popup__close">
+            <svg>
+               <use xlink:href="img/icons/icons.svg#icon-close"></use>
+            </svg>
+         </button>
+      </form>
+   </div>
+</div>
+   
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>
