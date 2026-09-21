@@ -196,7 +196,7 @@ body {
   background: var(--color-second-bg);
   position: relative;
   overscroll-behavior-y: none;
-  transition: color 0.3s linear, background-color 0.3s linear;
+  transition: color 0.5s linear, background-color 0.5s linear;
 }
 body::after {
   content: "";
