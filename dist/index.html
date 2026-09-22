@@ -12,6 +12,9 @@
    <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
    <link rel="icon" type="image/x-icon" href="img/fav/favicon.ico">
+
+   <link rel="preload" as="image" href="img/hero-2.avif" media="(min-width: 768px)" fetchpriority="high">
+   <link rel="preload" as="image" href="img/hero-1-mob.avif" media="(max-width: 767px)" fetchpriority="high">
    <!-- Meta Description -->
    <meta name="description" content="">
    <meta property="og:title" content="">
@@ -19,7 +22,7 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260922114029">
    <title>Главная</title>
 </head>
 
@@ -388,7 +391,7 @@
 </header>
       <main>
 
-         <section class="hero" data-theme="light">
+         <section class="hero" data-theme="dark">
             <div class="hero__body container">
                <div class="hero__info">
                   <h1 class="hero__title">Надёжные кейсы и кофры под ваше оборудование</h1>
@@ -410,12 +413,12 @@
             <div class="hero__image">
                <picture>
                   <source media="(max-width: 767px)" srcset="img/hero-1-mob.avif">
-                  <img src="img/hero-2.avif" width="1500" height="1000" alt="case">
+                  <img src="img/hero-2.avif" width="1181" height="886" alt="case" fetchpriority="high" decoding="async">
                </picture>
             </div>
          </section>
 
-         <section class="section-cases" data-theme="dark">
+         <section class="section-cases" data-theme="light">
             <div class="section-cases__body container section-padding">
                <div class="section-cases__aside">
                   <div class="section-cases__aside-wrapper">
@@ -439,73 +442,113 @@
                      <a href="" class="section-cases__card">
                         <h3 class="section-cases__card-name">Промышленность</h3>
                         <div class="section-cases__card-image">
-                           <img src="img/case-previews/cat-image-1.avif" width="385" height="364" alt="image">
+                           <img src="img/case-previews/cat-image-1.avif" width="385" height="364" alt="image"
+                              loading="lazy">
                         </div>
                         <div class="section-cases__card-arrow">
-                           <span class="arrow"></span>
+                           <span class="arrow">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                              </svg>
+                           </span>
                         </div>
                      </a>
                      <a href="" class="section-cases__card">
                         <h3 class="section-cases__card-name">Коммерция</h3>
                         <div class="section-cases__card-image">
-                           <img src="img/case-previews/cat-image-2.avif" width="385" height="364" alt="image">
+                           <img src="img/case-previews/cat-image-2.avif" width="385" height="364" alt="image"
+                              loading="lazy">
                         </div>
                         <div class="section-cases__card-arrow">
-                           <span class="arrow"></span>
+                           <span class="arrow">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                              </svg>
+                           </span>
                         </div>
                      </a>
                      <a href="" class="section-cases__card">
                         <h3 class="section-cases__card-name">Шоу-бизнес</h3>
                         <div class="section-cases__card-image">
-                           <img src="img/case-previews/cat-image-3.avif" width="385" height="364" alt="image">
+                           <img src="img/case-previews/cat-image-3.avif" width="385" height="364" alt="image"
+                              loading="lazy">
                         </div>
                         <div class="section-cases__card-arrow">
-                           <span class="arrow"></span>
+                           <span class="arrow">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                              </svg>
+                           </span>
                         </div>
                      </a>
                      <a href="" class="section-cases__card">
                         <h3 class="section-cases__card-name">Медицина</h3>
                         <div class="section-cases__card-image">
-                           <img src="img/case-previews/cat-image-4.avif" width="385" height="364" alt="image">
+                           <img src="img/case-previews/cat-image-4.avif" width="385" height="364" alt="image"
+                              loading="lazy">
                         </div>
                         <div class="section-cases__card-arrow">
-                           <span class="arrow"></span>
+                           <span class="arrow">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                              </svg>
+                           </span>
                         </div>
                      </a>
                      <a href="" class="section-cases__card">
                         <h3 class="section-cases__card-name">Оборонный комплекс</h3>
                         <div class="section-cases__card-image">
-                           <img src="img/case-previews/cat-image-5.avif" width="385" height="364" alt="image">
+                           <img src="img/case-previews/cat-image-5.avif" width="385" height="364" alt="image"
+                              loading="lazy">
                         </div>
                         <div class="section-cases__card-arrow">
-                           <span class="arrow"></span>
+                           <span class="arrow">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                              </svg>
+                           </span>
                         </div>
                      </a>
                      <a href="" class="section-cases__card">
                         <h3 class="section-cases__card-name">Наука</h3>
                         <div class="section-cases__card-image">
-                           <img src="img/case-previews/cat-image-6.avif" width="385" height="364" alt="image">
+                           <img src="img/case-previews/cat-image-6.avif" width="385" height="364" alt="image"
+                              loading="lazy">
                         </div>
                         <div class="section-cases__card-arrow">
-                           <span class="arrow"></span>
+                           <span class="arrow">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                              </svg>
+                           </span>
                         </div>
                      </a>
                      <a href="" class="section-cases__card">
                         <h3 class="section-cases__card-name">Искусство и музеи</h3>
                         <div class="section-cases__card-image">
-                           <img src="img/case-previews/cat-image-7.avif" width="385" height="364" alt="image">
+                           <img src="img/case-previews/cat-image-7.avif" width="385" height="364" alt="image"
+                              loading="lazy">
                         </div>
                         <div class="section-cases__card-arrow">
-                           <span class="arrow"></span>
+                           <span class="arrow">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                              </svg>
+                           </span>
                         </div>
                      </a>
                      <a href="" class="section-cases__card">
                         <h3 class="section-cases__card-name">IT</h3>
                         <div class="section-cases__card-image">
-                           <img src="img/case-previews/cat-image-8.avif" width="385" height="364" alt="image">
+                           <img src="img/case-previews/cat-image-8.avif" width="385" height="364" alt="image"
+                              loading="lazy">
                         </div>
                         <div class="section-cases__card-arrow">
-                           <span class="arrow"></span>
+                           <span class="arrow">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                              </svg>
+                           </span>
                         </div>
                      </a>
                   </div>
@@ -516,7 +559,95 @@
             </div>
          </section>
 
-         <section class="" style="height: 100vh; background: #ccc;"></section>
+         <section class="section-categories" data-theme="light">
+            <div class="section-categories__body container">
+               <div class="section-categories__cards">
+                  <a href="" class="category-card">
+                     <h2 class="category-card__name">Кейсы</h2>
+                     <div class="category-card__image">
+                        <img src="img/cat-prev-1.avif" width="520" height="410" alt="image" loading="lazy"
+                           decoding="async">
+                     </div>
+                     <div class="category-card__arrow">
+                        <span class="arrow">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                           </svg>
+                        </span>
+                     </div>
+                  </a>
+                  <a href="" class="category-card">
+                     <h2 class="category-card__name">Ложементы</h2>
+                     <div class="category-card__image">
+                        <img src="img/cat-prev-2.avif" width="520" height="410" alt="image" loading="lazy"
+                           decoding="async">
+                     </div>
+                     <div class="category-card__arrow">
+                        <span class="arrow">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                           </svg>
+                        </span>
+                     </div>
+                  </a>
+                  <a href="" class="category-card">
+                     <h2 class="category-card__name">Фурнитура</h2>
+                     <div class="category-card__image">
+                        <img src="img/cat-prev-3.avif" width="520" height="410" alt="image" loading="lazy"
+                           decoding="async">
+                     </div>
+                     <div class="category-card__arrow">
+                        <span class="arrow">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-arrow-long"></use>
+                           </svg>
+                        </span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <section class="section-order" data-theme="light">
+            <div class="section-order__body container section-padding">
+               <div class="section-order__wrapper">
+                  <div class="section-order__info">
+                     <h2 class="section-order__title section-title">Изготавливаем
+                        ложементы на заказ</h2>
+                     <div class="section-order__descr">
+                        <ul>
+                           <li>
+                              <img src="img/icons/streamline_location-target-1.svg" width="33" height="33" alt="icon"
+                                 loading="lazy">
+                              Высокоточная резка на лазерных станках ЧПУ
+                           </li>
+                           <li>
+                              <img src="img/icons/material-symbols-light_resize.svg" width="33" height="33" alt="icon"
+                                 loading="lazy">
+                              Качественные материалы: пенополиэтилен,
+                              пенополиуретан, карпет, этиленвинилацетат
+                           </li>
+                           <li>
+                              <img src="img/icons/lets-icons_materials-light.svg" width="33" height="33" alt="icon"
+                                 loading="lazy">
+                              Любой размер и любая сложность
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="section-order__button">
+                        <a href="" class="btn">Подробнее</a>
+                     </div>
+
+                  </div>
+                  <div class="section-order__frame">
+                     <video muted autoplay playsinline loop preload="none" poster="img/manufacturing-poster.avif">
+                        <source src="files/manufacturing.mp4" type="video/mp4">
+                     </video>
+                  </div>
+               </div>
+
+            </div>
+         </section>
 
       </main>
       <footer class="footer">
@@ -554,7 +685,7 @@
 </div>
    
 
-   <script src="js/app.js"></script>
+   <script src="js/app.js?_v=20260922114029"></script>
 </body>
 
 </html>
