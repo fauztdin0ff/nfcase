@@ -24,6 +24,8 @@
    </svg><svg fill="none" viewBox="0 0 43 23" id="icon-arrow-short" xmlns="http://www.w3.org/2000/svg">
       <path d="m30.422 21.724 11-10.5-11-10.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
       <path stroke="currentColor" stroke-width="2" d="M40.047 11.231H.001" />
+   </svg><svg fill="none" viewBox="0 0 20 23" id="icon-play" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.2 9.87072C20.2667 10.4837 20.2667 12.0163 19.2 12.6293L2.4 22.2842C1.33333 22.8973 -5.38385e-08 22.131 0 20.905L8.47956e-07 1.59503C9.01794e-07 0.369004 1.33333 -0.397262 2.4 0.215752L19.2 9.87072Z" fill="currentColor"/>
    </svg><svg fill="none" viewBox="0 0 13 10" id="icon-check" xmlns="http://www.w3.org/2000/svg">
       <path d="m0 4.889 1.25-1.222 3.125 3.055L11.25 0l1.25 1.222-8.125 7.945L0 4.889Z" fill="currentColor" />
    </svg><svg fill="none" viewBox="0 0 11 7" id="icon-chevron" xmlns="http://www.w3.org/2000/svg">
