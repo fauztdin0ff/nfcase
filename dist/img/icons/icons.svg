@@ -17,6 +17,8 @@
    </svg><svg fill="none" viewBox="0 0 105 22" id="icon-arrow-long" xmlns="http://www.w3.org/2000/svg">
       <path d="m93 20.74 11-10-11-10" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
       <path stroke="currentColor" stroke-width="2" d="M103 10.74H0" />
+   </svg><svg fill="none" viewBox="0 0 15 2" id="icon-reperpepper" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.5 2C4.54797 2 1.81439 1.58735 0 0.868106L0.629301 0C4.03232 1.3494 10.9677 1.3494 14.3707 0L15 0.868106C13.1856 1.58735 10.452 2 7.5 2Z" fill="currentColor"/>
    </svg><svg fill="none" viewBox="0 0 20 19" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
       <path d="m11.32 15.857 6.787-6.787-6.787-6.786" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
          stroke-linecap="square" />

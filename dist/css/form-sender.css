@@ -1,0 +1,191 @@
+/*==========================================================================
+Форма
+============================================================================*/
+.form-wrapper {
+   position: relative;
+}
+
+.form-wrapper.sending .form {
+   opacity: 0.5;
+}
+
+.form-wrapper.sending .form-sending {
+   opacity: 1;
+   pointer-events: all;
+}
+
+.form-wrapper.sended .form-sending {
+   opacity: 0;
+   pointer-events: none;
+}
+
+.form-wrapper.sended .form-success {
+   opacity: 1;
+   pointer-events: all;
+}
+
+.field {
+   flex: 1;
+   position: relative;
+   width: 100%;
+}
+
+.field.required label::after {
+   content: '*';
+   padding-left: 4px;
+   color: red;
+}
+
+.field.warning input {
+   border-color: red;
+}
+
+.field label {
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 1rem;
+   width: 100%;
+   transform: translateY(-50%);
+   color: inherit;
+   opacity: 0.8;
+   font-size: 0.8rem;
+   font-family: inherit;
+   text-box: trim-both cap alphabetic;
+   transition: all 0.3s ease;
+   cursor: text;
+   will-change: transform;
+}
+
+.field:has(textarea) label {
+   top: 14px;
+   transform: none;
+}
+
+.field.is-focus label {
+   font-size: 0.5rem;
+   transform: translateY(calc(-1 * (50% + 1rem)));
+   opacity: 0.5;
+}
+
+.field.is-focus:has(textarea) label {
+   font-size: 0.5rem;
+   transform: translateY(-7px);
+}
+
+.field-agree {
+   font-size: 0.8rem;
+   line-height: 120%;
+}
+
+button[type="submit"].disabled {
+   opacity: 0.7;
+   pointer-events: none;
+}
+
+.warning-image {
+   position: absolute;
+   top: 80%;
+   left: 0;
+   z-index: 2;
+}
+
+.form-sending {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+
+.form-loader {
+   display: block;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   border-top: 5px solid #000;
+   border-right: 5px solid #000;
+   border-bottom: 5px solid #000;
+   border-left: 5px solid transparent;
+   animation: loading 1s linear infinite;
+}
+
+.form-success {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+
+
+/*==========================================================================
+Попапы
+============================================================================*/
+.popup {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr;
+   padding: rem(120) rem(24);
+   z-index: 99;
+   background: rgba(16, 16, 19, 0.9);
+   max-height: 100vh;
+   overflow-y: auto;
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   transition: all 0.5s ease
+}
+
+.popup.show {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: all;
+}
+
+.popup-body {
+   width: 100%;
+   max-width: 560px;
+   margin: auto;
+   background: #fff;
+   position: relative;
+   padding: 36px;
+   border-radius: 12px;
+}
+
+.popup-close {
+   position: absolute;
+   top: 8px;
+   right: 8px;
+}
+
+
+/*==========================================================================
+@keyframes
+============================================================================*/
+@keyframes loading {
+   to {
+      transform: rotate(360deg);
+   }
+}
