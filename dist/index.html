@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
    <meta name="format-detection" content="telephone=no">
    <!-- Favicon -->
    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
@@ -22,8 +22,8 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/form-sender.css?_v=20260925103222">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260925103222">
+   <link rel="stylesheet" href="css/form-sender.css?_v=20260925115457">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260925115457">
    <title>Главная</title>
 </head>
 
@@ -74,14 +74,14 @@
 
          <div class="header__actions">
             <button type="button" class="header__toggle -catalog">
-               <div class="header__toggle-icon">
+               <span class="header__toggle-icon">
                   <svg class="-burger">
                      <use xlink:href="img/icons/icons.svg#icon-burger"></use>
                   </svg>
                   <svg class="-close">
                      <use xlink:href="img/icons/icons.svg#icon-close-short"></use>
                   </svg>
-               </div>
+               </span>
                Каталог
             </button>
             <button type="button" class="header__toggle -search open-popup" data-popup="search-popup"
@@ -311,9 +311,9 @@
                            </ul>
                         </li>
 
-                        <div class="menu__subitem">
+                        <li class="menu__subitem">
                            <a href="" class="menu__catalog">Весь каталог</a>
-                        </div>
+                        </li>
                      </ul>
 
                   </li>
@@ -652,8 +652,8 @@
             </div>
          </section>
 
-         <section class="carousel" data-theme="light">
-            <div class="carousel__body container section-padding">
+         <div class="carousel" data-theme="light">
+            <div class="carousel__body container">
                <div class="carousel__head">
                   <h2 class="carousel__title section-title">Последние работы</h2>
                   <div class="carousel__button">
@@ -780,7 +780,7 @@
                   </div>
                </div>
             </div>
-         </section>
+         </div>
 
          <section class="calculate" id="calculate" data-theme="gray">
             <div class="calculate__body container section-padding">
@@ -1232,7 +1232,7 @@
                                        <span class="upload__text">
                                           <span class="upload__title">Прикрепить фото или чертёж</span>
                                           <span class="upload__rules">PDF, JPG, PNG · до 10 МБ · до 5 файлов</span>
-                                          <div class="upload__filename"></div>
+                                          <span class="upload__filename"></span>
                                        </span>
                                     </label>
                                  </div>
@@ -1365,7 +1365,7 @@
             </div>
          </section>
 
-         <section class="carousel" data-theme="light">
+         <div class="carousel" data-theme="light">
             <div class="carousel__body container">
                <div class="carousel__content">
                   <div class="carousel__slider swiper">
@@ -1543,7 +1543,7 @@
                   </div>
                </div>
             </div>
-         </section>
+         </div>
 
          <section class="benefits" data-theme="light">
             <div class="benefits__body container section-padding">
@@ -1933,19 +1933,19 @@
          </div>
 
          <div class="footer__contacts">
-            <a href="" class="footer__contact" target="_blank">
+            <a href="https://yandex.uz/maps/-/CXQUzAIP" target="_blank" rel="nofollow" class="footer__contact">
                <svg>
                   <use xlink:href="img/icons/icons.svg#icon-location"></use>
                </svg>
                Московская область, Пушкинский район, рабочий поселок Лесной, ул. Советская, д. 21
             </a>
-            <a href="tel:+74957971915" class="footer__contact" target="_blank">
+            <a href="tel:+74957971915" class="footer__contact">
                <svg>
                   <use xlink:href="img/icons/icons.svg#icon-phone"></use>
                </svg>
                +7 (495) 797-19-15
             </a>
-            <a href="mailto:info@nfcase.ru" class="footer__contact" target="_blank">
+            <a href="mailto:info@nfcase.ru" class="footer__contact">
                <svg>
                   <use xlink:href="img/icons/icons.svg#icon-mail"></use>
                </svg>
@@ -2033,7 +2033,7 @@
    </div>
 </footer>
    </div>
-   <!-- popup-->
+   <!-- callback popup-->
 <div id="callback-popup" class="callback-popup popup" role="dialog" aria-modal="true" data-lenis-prevent>
    <div class="popup__body">
       <div class="popup__title section-title">Обсудим ваш кейс</div>
@@ -2068,7 +2068,7 @@
             <div class="form__row">
                <div class="field">
                   <label for="message2">Сообщение</label>
-                  <textarea id="message" name="message2"></textarea>
+                  <textarea id="message2" name="message"></textarea>
                </div>
             </div>
 
@@ -2090,7 +2090,7 @@
 
       </div>
    </div>
-   <button type="button" class="popup__close" aria-label="Закрыть попап">
+   <button type="button" class="popup__exit popup__close" aria-label="Закрыть попап">
       <svg>
          <use xlink:href="img/icons/icons.svg#icon-close"></use>
       </svg>
@@ -2117,10 +2117,24 @@
       </form>
    </div>
 </div>
+
+<!-- thanks popup-->
+<div id="thanks-popup" class="thanks-popup popup" role="dialog" aria-modal="true" data-lenis-prevent>
+   <div class="popup__body">
+      <div class="popup__title section-title">Спасибо!</div>
+      <div class="popup__subtitle section-subtitle">Совсем скоро мы свяжемся с вами</div>
+      <button type="button" class="popup__button btn popup__close">Ок</button>
+   </div>
+   <button type="button" class="popup__exit popup__close" aria-label="Закрыть попап">
+      <svg>
+         <use xlink:href="img/icons/icons.svg#icon-close"></use>
+      </svg>
+   </button>
+</div>
    
 
-   <script src="js/app.js?_v=20260925103222" defer></script>
-   <script src="js/send.js?_v=20260925103222" defer></script>
+   <script src="js/app.js?_v=20260925115457" defer></script>
+   <script src="js/send.js?_v=20260925115457" defer></script>
 
    <script>
       window.addEventListener("load", () => {
