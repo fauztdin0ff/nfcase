@@ -22,8 +22,8 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/form-sender.css?_v=20260925115457">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260925115457">
+   <link rel="stylesheet" href="css/form-sender.css?_v=20260928175257">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260928175257">
    <title>Главная</title>
 </head>
 
@@ -35,7 +35,7 @@
          <div class="header__worktime">Пн-Пт: 09:00-18:00</div>
          <hr>
          <div class="header__contacts">
-            <a href="mailto:info@nfcase.ru" class="header__email">info@nfcase.ru</a>
+            <a href="mailto:info@nfcase.ru" class="header__email ma">info</a>
             <a href="tel:+74957971915" class="header__phone">+7 (495) 797-19-15</a>
             <div class="header__socials">
                <a href="" target="_blank" class="header__social" aria-label="Max мессенджер">
@@ -358,7 +358,7 @@
                </ul>
                <div class="menu__info">
                   <div class="menu__worktime">Пн-Пт: 09:00-18:00</div>
-                  <a href="mailto:info@nfcase.ru" class="menu__contact">info@nfcase.ru</a>
+                  <a href="mailto:info@nfcase.ru" class="menu__contact ma">info</a>
                   <a href="tel:+74957971915" class="menu__contact">+7 (495) 797-19-15</a>
                   <div class="menu__socials">
                      <a href="" target="_blank" class="menu__social" aria-label="Max мессенджер">
@@ -1933,7 +1933,7 @@
          </div>
 
          <div class="footer__contacts">
-            <a href="https://yandex.uz/maps/-/CXQUzAIP" target="_blank" rel="nofollow" class="footer__contact">
+            <a href="contacts.html" target="_blank" rel="nofollow" class="footer__contact">
                <svg>
                   <use xlink:href="img/icons/icons.svg#icon-location"></use>
                </svg>
@@ -1945,11 +1945,11 @@
                </svg>
                +7 (495) 797-19-15
             </a>
-            <a href="mailto:info@nfcase.ru" class="footer__contact">
+            <a href="" class="footer__contact ma">
                <svg>
                   <use xlink:href="img/icons/icons.svg#icon-mail"></use>
                </svg>
-               info@nfcase.ru
+               info
             </a>
 
             <div class="header__socials">
@@ -2133,8 +2133,8 @@
 </div>
    
 
-   <script src="js/app.js?_v=20260925115457" defer></script>
-   <script src="js/send.js?_v=20260925115457" defer></script>
+   <script src="js/app.js?_v=20260928175257" defer></script>
+   <script src="js/send.js?_v=20260928175257" defer></script>
 
    <script>
       window.addEventListener("load", () => {
@@ -2159,6 +2159,21 @@
             });
          };
          document.body.appendChild(script);
+      });
+   </script>
+
+   <script>
+      window.addEventListener("DOMContentLoaded", function () {
+         document.querySelectorAll(".ma").forEach((ma) => {
+            const email = ma.textContent.trim() + "@nfcase.ru";
+            ma.href = "mailto:" + email;
+            [...ma.childNodes].forEach((node) => {
+               if (node.nodeType === Node.TEXT_NODE) {
+                  node.remove();
+               }
+            });
+            ma.append(document.createTextNode(email));
+         });
       });
    </script>
 </body>
