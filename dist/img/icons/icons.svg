@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 105 32" xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
-   <style>
-      :root>svg {
-         display: none
-      }
-
-      :root>svg:target {
-         display: block
-      }
-   </style><svg fill="none" viewBox="0 0 20 19" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
+   xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"><svg fill="none" viewBox="0 0 20 19" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
       <path d="M7.848 2.25 1.06 9.036l6.787 6.787" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
          stroke-linecap="square" />
       <path d="M19.168 9.07h-18" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
