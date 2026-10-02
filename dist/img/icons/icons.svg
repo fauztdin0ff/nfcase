@@ -10,6 +10,13 @@
       <path stroke="currentColor" stroke-width="2" d="M103 10.74H0" />
    </svg><svg fill="none" viewBox="0 0 15 2" id="icon-reperpepper" xmlns="http://www.w3.org/2000/svg">
       <path d="M7.5 2C4.54797 2 1.81439 1.58735 0 0.868106L0.629301 0C4.03232 1.3494 10.9677 1.3494 14.3707 0L15 0.868106C13.1856 1.58735 10.452 2 7.5 2Z" fill="currentColor"/>
+   </svg><svg fill="none" viewBox="0 0 20 11" id="icon-filter" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0.5H20" stroke="currentColor" stroke-linejoin="round"/>
+      <path d="M3 5.5H17" stroke="currentColor" stroke-linejoin="round"/>
+      <path d="M7 10.5H13" stroke="currentColor" stroke-linejoin="round"/>
+   </svg>
+   <svg fill="none" viewBox="0 0 22 22" id="icon-sorting" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.0625 5V17M18.3125 13.75L15.0625 17L11.8125 13.75M6.9375 17V5M10.1875 8.25L6.9375 5L3.6875 8.25" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
    </svg><svg fill="none" viewBox="0 0 20 19" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
       <path d="m11.32 15.857 6.787-6.787-6.787-6.786" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
          stroke-linecap="square" />
