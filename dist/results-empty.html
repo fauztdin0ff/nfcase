@@ -32,7 +32,7 @@
    <link rel="stylesheet" href="css/form-sender.css?_v=20261005183600">
    <link rel="stylesheet" href="css/base.min.css?_v=20261005183600">
    <link rel="stylesheet" href="css/style.min.css?_v=20261005183600">
-   <title>Категория</title>
+   <title>Производство</title>
 </head>
 
 <body class="theme-default">
@@ -402,8 +402,8 @@
       </header>
       <main>
 
-         <section class="product">
-            <div class="product__body container">
+         <section class="results">
+            <div class="results__body container">
 
                <nav class="breadcrumbs">
                   <ul class="breadcrumbs__list">
@@ -411,299 +411,34 @@
                         <a href="" class="breadcrumbs__link">Главная</a>
                      </li>
                      <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Каталог</a>
-                     </li>
-                     <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Кейсы и кофры</a>
-                     </li>
-                     <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Кейсы для музыкальных инструментов</a>
-                     </li>
-                     <li class="breadcrumbs__item">
-                        <span class="breadcrumbs__current">Кейс для лютни</span>
+                        <span class="breadcrumbs__current">Результаты поиска</span>
                      </li>
                   </ul>
                </nav>
 
-               <div class="product__content">
-                  <div class="product__gallery-wrapper">
-                     <div class="product__gallery">
-
-                        <div class="product__previews">
-                           <button type="button" class="product__previews-prev" aria-label="Предыдущий слайд">
-                              <svg>
-                                 <use xlink:href="img/icons/icons.svg#icon-chevron"></use>
-                              </svg>
-                           </button>
-                           <div class="product__previews-slider swiper">
-                              <div class="swiper-wrapper">
-                                 <div class="product__previews-slide swiper-slide">
-                                    <img src="img/products/product-0.avif" width="88" height="91" alt="image">
-                                 </div>
-                                 <div class="product__previews-slide swiper-slide">
-                                    <img src="img/products/product-1.avif" width="88" height="91" alt="image">
-                                 </div>
-                                 <div class="product__previews-slide swiper-slide">
-                                    <img src="img/products/product-3.avif" width="88" height="91" alt="image">
-                                 </div>
-                                 <div class="product__previews-slide swiper-slide">
-                                    <img src="img/products/product-4.avif" width="88" height="91" alt="image">
-                                 </div>
-                              </div>
-                           </div>
-                           <button type="button" class="product__previews-next" aria-label="Следующий слайд">
-                              <svg>
-                                 <use xlink:href="img/icons/icons.svg#icon-chevron"></use>
-                              </svg>
-                           </button>
+               <h1 class="results__title page-title">Результаты поиска</h1>
+               <div class="results__content">
+                  <div class="results__request">
+                     <form class="results__form">
+                        <div class="results__form-area">
+                           <input type="search" value="кейс для лютни" placeholder="Поиск..." required>
                         </div>
-
-                        <div class="product__images">
-                           <div class="product__images-slider swiper">
-                              <div class="swiper-wrapper">
-                                 <div class="product__images-slide swiper-slide">
-                                    <a href="img/products/product-0.avif" class="product__image glightbox"
-                                       data-gallery="product-gallery">
-                                       <img src="img/products/product-0.avif" width="757" height="710" alt="image">
-                                    </a>
-                                 </div>
-                                 <div class="product__images-slide swiper-slide">
-                                    <a href="img/products/product-1.avif" class="product__image glightbox"
-                                       data-gallery="product-gallery">
-                                       <img src="img/products/product-1.avif" width="757" height="710" alt="image">
-                                    </a>
-                                 </div>
-                                 <div class="product__images-slide swiper-slide">
-                                    <a href="img/products/product-3.avif" class="product__image glightbox"
-                                       data-gallery="product-gallery">
-                                       <img src="img/products/product-3.avif" width="757" height="710" alt="image">
-                                    </a>
-                                 </div>
-                                 <div class="product__images-slide swiper-slide">
-                                    <a href="img/products/product-4.avif" class="product__image glightbox"
-                                       data-gallery="product-gallery">
-                                       <img src="img/products/product-4.avif" width="757" height="710" alt="image">
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
+                        <div class="results__form-submit">
+                           <button type="submit" class="btn">Поиск</button>
                         </div>
-
-                     </div>
+                     </form>
                   </div>
 
-                  <div class="product__about">
-                     <div class="product__about-main">
-                        <h1 class="product__name section-title">Кейс для лютни</h1>
-                        <div class="product__button">
-                           <button type="button" class="btn open-popup" data-popup="buy-popup">Заказать
-                              похожий</button>
-                        </div>
-                        <div class="product__description">
-                           Ложемент из пенополиуретана надёжно защищает инструмент при перевозке. Кейс дополнительно
-                           оснащён выдвижной
-                           телескопической ручкой и колесами для удобства транспортировки.
+                  <div class="results__main">
+
+                     <div class="results__empty">
+                        <div class="results__empty-title">Увы, мы ничего не нашли...</div>
+                        <div class="results__empty-subtitle">Возможно , вам поможет наш каталог.</div>
+                        <div class="results__empty-button">
+                           <a href="catalog.html" class="btn">В каталог</a>
                         </div>
                      </div>
-                     <div class="product__characteristics">
-                        <h3 class="product__characteristics-title">Характеристики</h3>
-                        <div class="product__characteristics-cols">
-                           <div class="product__characteristics-col">
-                              <h4>Варианты материалов:</h4>
-                              <ul>
-                                 <li>Ламинированная<br> фанера 6,5 мм</li>
-                                 <li>Ламинированная<br> фанера 9 мм</li>
-                                 <li>Алюминиевый<br> композит 4 мм</li>
-                                 <li>Сотовый пластик<br> Astroboard 4, 7, 9 мм</li>
-                              </ul>
-                           </div>
-                           <div class="product__characteristics-col">
-                              <h4>Фурнитура:</h4>
-                              <ul>
-                                 <li>Замки чемоданного<br> типа</li>
-                                 <li>Ручка для переноски<br> чемоданного типа</li>
-                                 <li>Углы (шарообразные или<br> квадратные)</li>
-                                 <li>Сотовый пластик<br> Astroboard 4, 7, 9 мм</li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="product__options">
-                        <div class="product__option">
-                           <h4>Ложемент:</h4>
-                           <p>Варьируемая толщина демпфирующего материала по периметру 10, 20, 30, 40 мм</p>
-                        </div>
-                        <div class="product__option">
-                           <h4>Дополнительные опции:</h4>
-                           <ul>
-                              <li>Необходимые отделения для хранения аксессуаров</li>
-                              <li>Врезные колеса для транспортировки</li>
-                              <li>Врезная ручка для транспортировки на колесах</li>
-                              <li>Выдвижная телескопическая ручка для транспортировки на колесах</li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
 
-         <section class="relevant">
-            <div class="relevant__body container section-padding">
-               <h2 class="relevant__title section-title">Похожие кейсы</h2>
-               <div class="relevant__content">
-                  <div class="relevant__slider swiper">
-                     <div class="swiper-wrapper">
-                        <div class="relevant__slide swiper-slide">
-                           <div class="product-card">
-                              <div class="product-card__image">
-                                 <img src="img/products/product-1.avif" width="365" height="280" alt="product">
-                              </div>
-                              <div class="product-card__info">
-                                 <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
-                                 <div class="product-card__name">
-                                    Кейс для бас-гитары
-                                    из алюминиевого композита
-                                 </div>
-                                 <div class="product-card__descr">
-                                    Ударопрочный кейс из фанеры — отличный вариант для интенсивных, жёстких
-                                    и неаккуратных
-                                    перевозок. Или если нужен кейс
-                                    большого размера.
-                                 </div>
-                                 <div class="product-card__button">
-                                    <a href="" class="btn">Заказать похожий</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="relevant__slide swiper-slide">
-                           <div class="product-card">
-                              <div class="product-card__image">
-                                 <img src="img/products/product-2.avif" width="365" height="280" alt="product">
-                              </div>
-                              <div class="product-card__info">
-                                 <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
-                                 <div class="product-card__name">
-                                    Кейс для лютни
-                                 </div>
-                                 <div class="product-card__descr">
-                                    Ложемент из пенополиуретана надёжно защищает инструмент при перевозке. Кейс
-                                    дополнительно оснащён выдвижной
-                                    телескопической ручкой и колесами
-                                    для удобства транспортировки.
-                                 </div>
-                                 <div class="product-card__button">
-                                    <a href="" class="btn">Заказать похожий</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="relevant__slide swiper-slide">
-                           <div class="product-card">
-                              <div class="product-card__image">
-                                 <img src="img/products/product-3.avif" width="365" height="280" alt="product">
-                              </div>
-                              <div class="product-card__info">
-                                 <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
-                                 <div class="product-card__name">
-                                    Кейс для аккордеона
-                                 </div>
-                                 <div class="product-card__descr">
-                                    Выполнен из серебристого алюминиевого композита толщиной 4 мм.
-                                 </div>
-                                 <div class="product-card__button">
-                                    <a href="" class="btn">Заказать похожий</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="relevant__slide swiper-slide">
-                           <div class="product-card">
-                              <div class="product-card__image">
-                                 <img src="img/products/product-4.avif" width="365" height="280" alt="product">
-                              </div>
-                              <div class="product-card__info">
-                                 <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
-                                 <div class="product-card__name">
-                                    Кофр для ударных
-                                 </div>
-                                 <div class="product-card__descr">
-                                    Уникальная конфигурация кофра позволяет транспортировать не только сами барабаны,
-                                    но и комплект стоек, стул и тарелки.
-                                    Имеются специализированные ящики для хранения замка хай-хэта...
-                                 </div>
-                                 <div class="product-card__button">
-                                    <a href="" class="btn">Заказать похожий</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="relevant__slide swiper-slide">
-                           <div class="product-card">
-                              <div class="product-card__image">
-                                 <img src="img/products/product-5.avif" width="365" height="280" alt="product">
-                              </div>
-                              <div class="product-card__info">
-                                 <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
-                                 <div class="product-card__name">
-                                    Кейс для скрипки
-                                 </div>
-                                 <div class="product-card__descr">
-                                    Высокопрочный кейс обеспечит гарантированную защиту музыкального инструмента
-                                    при перевозке.
-                                 </div>
-                                 <div class="product-card__button">
-                                    <a href="" class="btn">Заказать похожий</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="relevant__slide swiper-slide">
-                           <div class="product-card">
-                              <div class="product-card__image">
-                                 <img src="img/products/product-6.avif" width="365" height="280" alt="product">
-                              </div>
-                              <div class="product-card__info">
-                                 <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
-                                 <div class="product-card__name">
-                                    Кофр для конго
-                                 </div>
-                                 <div class="product-card__descr">
-                                    Наилучшим решением для сохранности перкуссионного инструмента является чётко
-                                    подобранный по размерам жесткий
-                                    транспортировочный кофр.
-                                 </div>
-                                 <div class="product-card__button">
-                                    <a href="" class="btn">Заказать похожий</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-
-                     </div>
-                  </div>
-
-                  <div class="relevant__nav slider-nav">
-                     <div class="relevant__pagination slider-nav__pagination"></div>
-                     <div class="relevant__buttons slider-nav__buttons">
-                        <button type="button" class="relevant__prev slider-prev" aria-label="Предыдущий слайд">
-                           <svg>
-                              <use xlink:href="img/icons/icons.svg#icon-arrow-left"></use>
-                           </svg>
-                        </button>
-                        <button type="button" class="relevant__next slider-next" aria-label="Следующий слайд">
-                           <svg>
-                              <use xlink:href="img/icons/icons.svg#icon-arrow-right"></use>
-                           </svg>
-                        </button>
-                     </div>
                   </div>
                </div>
             </div>
