@@ -28,9 +28,9 @@
    <meta property="og:image:width" content="400">
    <meta property="og:image:height" content="400">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/form-sender.css?_v=20261007174413">
-   <link rel="stylesheet" href="css/base.min.css?_v=20261007174413">
-   <link rel="stylesheet" href="css/style.min.css?_v=20261007174413">
+   <link rel="stylesheet" href="css/form-sender.css?_v=20261009164442">
+   <link rel="stylesheet" href="css/base.min.css?_v=20261009164442">
+   <link rel="stylesheet" href="css/style.min.css?_v=20261009164442">
    <title>Главная</title>
 </head>
 
@@ -569,8 +569,49 @@
             </div>
          </section>
 
-         <section class="section-categories" data-theme="light">
-            <div class="section-categories__body container">
+         <section class="section-order" data-theme="light">
+            <div class="section-order__body container">
+               <div class="section-order__wrapper">
+                  <div class="section-order__info">
+                     <h2 class="section-order__title section-title">Изготавливаем
+                        ложементы на заказ</h2>
+                     <div class="section-order__descr">
+                        <ul>
+                           <li>
+                              <img src="img/icons/streamline_location-target-1.svg" width="33" height="33" alt="icon"
+                                 loading="lazy">
+                              Высокоточная резка на лазерных станках ЧПУ
+                           </li>
+                           <li>
+                              <img src="img/icons/material-symbols-light_resize.svg" width="33" height="33" alt="icon"
+                                 loading="lazy">
+                              Качественные материалы: пенополиэтилен,
+                              пенополиуретан, карпет, этиленвинилацетат
+                           </li>
+                           <li>
+                              <img src="img/icons/lets-icons_materials-light.svg" width="33" height="33" alt="icon"
+                                 loading="lazy">
+                              Любой размер и любая сложность
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="section-order__button">
+                        <a href="" class="btn">Подробнее</a>
+                     </div>
+
+                  </div>
+                  <div class="section-order__frame">
+                     <video muted autoplay playsinline loop preload="none" poster="img/manufacturing-poster.avif">
+                        <source src="files/manufacturing.mp4" type="video/mp4">
+                     </video>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+         <section class="section-categories" data-theme="dark">
+            <div class="section-categories__body container section-padding">
                <div class="section-categories__cards">
                   <a href="" class="category-card">
                      <h2 class="category-card__name">Кейсы</h2>
@@ -618,48 +659,7 @@
             </div>
          </section>
 
-         <section class="section-order" data-theme="light">
-            <div class="section-order__body container section-padding">
-               <div class="section-order__wrapper">
-                  <div class="section-order__info">
-                     <h2 class="section-order__title section-title">Изготавливаем
-                        ложементы на заказ</h2>
-                     <div class="section-order__descr">
-                        <ul>
-                           <li>
-                              <img src="img/icons/streamline_location-target-1.svg" width="33" height="33" alt="icon"
-                                 loading="lazy">
-                              Высокоточная резка на лазерных станках ЧПУ
-                           </li>
-                           <li>
-                              <img src="img/icons/material-symbols-light_resize.svg" width="33" height="33" alt="icon"
-                                 loading="lazy">
-                              Качественные материалы: пенополиэтилен,
-                              пенополиуретан, карпет, этиленвинилацетат
-                           </li>
-                           <li>
-                              <img src="img/icons/lets-icons_materials-light.svg" width="33" height="33" alt="icon"
-                                 loading="lazy">
-                              Любой размер и любая сложность
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="section-order__button">
-                        <a href="" class="btn">Подробнее</a>
-                     </div>
-
-                  </div>
-                  <div class="section-order__frame">
-                     <video muted autoplay playsinline loop preload="none" poster="img/manufacturing-poster.avif">
-                        <source src="files/manufacturing.mp4" type="video/mp4">
-                     </video>
-                  </div>
-               </div>
-
-            </div>
-         </section>
-
-         <div class="carousel" data-theme="light">
+         <div class="carousel" data-theme="dark">
             <div class="carousel__body container">
                <div class="carousel__head">
                   <h2 class="carousel__title section-title">Последние работы</h2>
@@ -1289,18 +1289,6 @@
                   </div>
                   <div class="advantages__card card-2">
                      <div class="advantages__card-icon">
-                        <img src="img/icons/adv-2.svg" width="46" height="46" alt="icon">
-                     </div>
-                     <div class="advantages__card-name">Чёткие технологические
-                        процессы</div>
-                     <div class="advantages__card-descr">
-                        Наши менеджеры, технологи и сборщики работают в одном здании и находятся в постоянном контакте,
-                        поэтому у нас не бывает
-                        «испорченного телефона»
-                     </div>
-                  </div>
-                  <div class="advantages__card card-3">
-                     <div class="advantages__card-icon">
                         <img src="img/icons/adv-3.svg" width="46" height="46" alt="icon">
                      </div>
                      <div class="advantages__card-name">Быстрая реакция
@@ -1309,17 +1297,29 @@
                         Мы заботимся о спокойствии клиентов, поэтому всегда оперативно отвечаем на вопросы благодаря
                         CRM-системе
                      </div>
+
                   </div>
-                  <div class="advantages__card card-4">
+                  <div class="advantages__card card-3">
                      <div class="advantages__card-icon">
                         <img src="img/icons/adv-4.svg" width="46" height="46" alt="icon">
                      </div>
                      <div class="advantages__card-name">Параметрическое
                         3D-моделирование</div>
                      <div class="advantages__card-descr">
-                        Наш конструкторский отдел разрабатывает точные параметрические модели кейсов
-                        в CAD-системе. Благодаря этому вы сможете: абсолютно точно понять, каким будет ваш будущий кейс,
-                        спокойно что-то изменить...
+                        Благодаря этому вы сможете: <br>
+                        абсолютно точно понять, каким будет ваш будущий кейс,
+                        спокойно что-то изменить, добавить или убрать до запуска изделия в производство.
+                     </div>
+                  </div>
+                  <div class="advantages__card card-4">
+                     <div class="advantages__card-icon">
+                        <img src="img/icons/adv-7.svg" width="46" height="46" alt="icon">
+                     </div>
+                     <div class="advantages__card-name">Выездные замерыс 3D-сканером</div>
+                     <div class="advantages__card-descr">
+                        Мы непрерывно ведем работу с программистами по поиску новых решений и автоматизации процессов.
+                        Поэтому наше внутреннее
+                        ПО постоянно модернизируется и имеет ряд функций, разработанных эксклюзивно для нас
                      </div>
                   </div>
                   <div class="advantages__card card-5">
@@ -1336,6 +1336,19 @@
                   </div>
                   <div class="advantages__card card-6">
                      <div class="advantages__card-icon">
+                        <img src="img/icons/adv-2.svg" width="46" height="46" alt="icon">
+                     </div>
+                     <div class="advantages__card-name">Чёткие технологические
+                        процессы</div>
+                     <div class="advantages__card-descr">
+                        Наши менеджеры, технологи и сборщики работают в одном здании и находятся в постоянном контакте,
+                        поэтому у нас не бывает
+                        «испорченного телефона»
+                     </div>
+                  </div>
+
+                  <div class="advantages__card card-7">
+                     <div class="advantages__card-icon">
                         <img src="img/icons/adv-6.svg" width="46" height="46" alt="icon">
                      </div>
                      <div class="advantages__card-name">Уникальные технологии</div>
@@ -1347,7 +1360,7 @@
             </div>
          </section>
 
-         <section class="manufacturing" data-theme="light">
+         <section class="manufacturing" data-theme="gray">
             <div class="manufacturing__body container section-padding">
                <div class="manufacturing__info">
                   <h2 class="manufacturing__title section-title">Наше <br> производство</h2>
@@ -1372,7 +1385,7 @@
             </div>
          </section>
 
-         <div class="carousel" data-theme="light">
+         <div class="carousel" data-theme="gray">
             <div class="carousel__body container">
                <div class="carousel__content">
                   <div class="carousel__slider swiper">
@@ -1625,216 +1638,223 @@
             </div>
             <div class="partners__body container">
                <div class="reviews">
-                  <div class="reviews__total">
-                     <div class="review-card">
-                        <div class="review-card__rating">
-                           <div class="review-card__rating-val">5.0 из 5</div>
-                           <div class="review-card__rating-star">
-                              <img src="img/partners/stars.svg" width="200" height="40" alt="stars">
+                  <div class="reviews__wrapper">
+                     <div class="reviews__total">
+                        <div class="review-card">
+                           <div class="review-card__rating">
+                              <div class="review-card__rating-val">5.0 из 5</div>
+                              <div class="review-card__rating-star">
+                                 <img src="img/partners/stars.svg" width="200" height="40" alt="stars">
+                              </div>
                            </div>
-                        </div>
-                        <div class="review-card__info">
-                           <div class="review-card__logo">
-                              <img src="img/partners/yandex.svg" width="252" height="40" alt="yandex logo">
+                           <div class="review-card__info">
+                              <div class="review-card__logo">
+                                 <img src="img/partners/yandex.svg" width="252" height="40" alt="yandex logo">
+                              </div>
+                              <div class="review-card__label">На основе 404 оценок</div>
                            </div>
-                           <div class="review-card__label">На основе 404 оценок</div>
-                        </div>
-                        <div class="review-card__button">
-                           <button type="button" class="btn -outline">Оставить отзыв</button>
+                           <div class="review-card__button">
+                              <button type="button" class="btn -outline">Оставить отзыв</button>
+                           </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="reviews__slider swiper">
-                     <div class="swiper-wrapper">
+                     <div class="reviews__slider swiper">
+                        <div class="swiper-wrapper">
 
-                        <div class="reviews__slide swiper-slide">
-                           <div class="review-card">
-                              <div class="review-card__rating">
-                                 <div class="review-card__rating-val">5.0 из 5</div>
-                                 <div class="review-card__rating-star">
-                                    <img src="img/partners/stars.svg" width="200" height="40" alt="stars">
+                           <!--  <div class="reviews__slide swiper-slide">
+                              <div class="review-card">
+                                 <div class="review-card__rating">
+                                    <div class="review-card__rating-val">5.0 из 5</div>
+                                    <div class="review-card__rating-star">
+                                       <img src="img/partners/stars.svg" width="200" height="40" alt="stars">
+                                    </div>
+                                 </div>
+                                 <div class="review-card__info">
+                                    <div class="review-card__logo">
+                                       <img src="img/partners/yandex.svg" width="252" height="40" alt="yandex logo">
+                                    </div>
+                                    <div class="review-card__label">На основе 404 оценок</div>
+                                 </div>
+                                 <div class="review-card__button">
+                                    <button type="button" class="btn -outline">Оставить отзыв</button>
                                  </div>
                               </div>
-                              <div class="review-card__info">
-                                 <div class="review-card__logo">
-                                    <img src="img/partners/yandex.svg" width="252" height="40" alt="yandex logo">
+                           </div> -->
+
+                           <div class="reviews__slide swiper-slide">
+                              <div class="review">
+                                 <div class="review__author">
+                                    <div class="review__author-photo">
+                                       <img src="img/partners/photo-1.webp" width="70" height="70" alt="photo">
+                                    </div>
+                                    <div class="review__author-info">
+                                       <div class="review__author-name">Пользователь A.</div>
+                                       <div class="review__author-rating">
+                                          <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                                       </div>
+                                       <div class="review__author-date">2 июля 2025</div>
+                                    </div>
                                  </div>
-                                 <div class="review-card__label">На основе 404 оценок</div>
-                              </div>
-                              <div class="review-card__button">
-                                 <button type="button" class="btn -outline">Оставить отзыв</button>
+                                 <div class="review__body">
+                                    <div class="review__text">
+                                       <div class="review__text-wrapper">
+                                          Передо мной стояла задача. Найти производителя по исполнению, сжатых сроках,
+                                          качество и с этой задачей на отлично
+                                          справилась компания Nfcase. Рекомендую всем . Отличная компания, отличная
+                                          команда. Огромная благодарность всей команде и
+                                          отдельное спасибо технологу Дмитрию. Спасибо.
+                                       </div>
+                                       <button type="button" class="review__text-button">еще</button>
+                                    </div>
+                                    <div class="review__label">Отзыв Яндекс.Карты</div>
+                                 </div>
                               </div>
                            </div>
-                        </div>
 
-                        <div class="reviews__slide swiper-slide">
-                           <div class="review">
-                              <div class="review__author">
-                                 <div class="review__author-photo">
-                                    <img src="img/partners/photo-1.webp" width="70" height="70" alt="photo">
-                                 </div>
-                                 <div class="review__author-info">
-                                    <div class="review__author-name">Пользователь A.</div>
-                                    <div class="review__author-rating">
-                                       <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                           <div class="reviews__slide swiper-slide">
+                              <div class="review">
+                                 <div class="review__author">
+                                    <div class="review__author-photo"></div>
+                                    <div class="review__author-info">
+                                       <div class="review__author-name">Арина Ш.</div>
+                                       <div class="review__author-rating">
+                                          <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                                       </div>
+                                       <div class="review__author-date">2 июля 2025</div>
                                     </div>
-                                    <div class="review__author-date">2 июля 2025</div>
                                  </div>
-                              </div>
-                              <div class="review__body">
-                                 <div class="review__text">
-                                    <div class="review__text-wrapper">
-                                       Передо мной стояла задача. Найти производителя по исполнению, сжатых сроках,
-                                       качество и с этой задачей на отлично
-                                       справилась компания Nfcase. Рекомендую всем . Отличная компания, отличная
-                                       команда. Огромная благодарность всей команде и
-                                       отдельное спасибо технологу Дмитрию. Спасибо.
+                                 <div class="review__body">
+                                    <div class="review__text">
+                                       <div class="review__text-wrapper">
+                                          Заказал кофру на колесах для системного блока и монитора для переезда далеко и
+                                          самолетом (до этого перевозил как
+                                          придется, в результате компьютер потом едва ли не по осколкам собирал).
+                                          Сделали
+                                          за полторы недели. Качество - мое
+                                          почтение. Прямо монументальность чувствуется! Запас прочности такой, что он бы
+                                          мог спокойно дублировать черный ящик в
+                                          самолете. А защелки отщелкивать - это просто АСМР. Внутренние отделения для
+                                          монитора и системника сделаны точно по
+                                          меркам. Цена - недешевая, но несоизмеримо меньше, чем возможная потеря
+                                          дорогого
+                                          оборудования, которое мне приносит хлеб.
+                                          Вообщем, создали приятное впечатление профессионалов!
+                                       </div>
+                                       <button type="button" class="review__text-button">еще</button>
                                     </div>
-                                    <button type="button" class="review__text-button">еще</button>
+                                    <div class="review__label">Отзыв Яндекс.Карты</div>
                                  </div>
-                                 <div class="review__label">Отзыв Яндекс.Карты</div>
                               </div>
                            </div>
-                        </div>
 
-                        <div class="reviews__slide swiper-slide">
-                           <div class="review">
-                              <div class="review__author">
-                                 <div class="review__author-photo"></div>
-                                 <div class="review__author-info">
-                                    <div class="review__author-name">Арина Ш.</div>
-                                    <div class="review__author-rating">
-                                       <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                           <div class="reviews__slide swiper-slide">
+                              <div class="review">
+                                 <div class="review__author">
+                                    <div class="review__author-photo">
+                                       <img src="img/partners/photo-2.webp" width="70" height="70" alt="photo">
                                     </div>
-                                    <div class="review__author-date">2 июля 2025</div>
-                                 </div>
-                              </div>
-                              <div class="review__body">
-                                 <div class="review__text">
-                                    <div class="review__text-wrapper">
-                                       Заказал кофру на колесах для системного блока и монитора для переезда далеко и
-                                       самолетом (до этого перевозил как
-                                       придется, в результате компьютер потом едва ли не по осколкам собирал). Сделали
-                                       за полторы недели. Качество - мое
-                                       почтение. Прямо монументальность чувствуется! Запас прочности такой, что он бы
-                                       мог спокойно дублировать черный ящик в
-                                       самолете. А защелки отщелкивать - это просто АСМР. Внутренние отделения для
-                                       монитора и системника сделаны точно по
-                                       меркам. Цена - недешевая, но несоизмеримо меньше, чем возможная потеря дорогого
-                                       оборудования, которое мне приносит хлеб.
-                                       Вообщем, создали приятное впечатление профессионалов!
+                                    <div class="review__author-info">
+                                       <div class="review__author-name">Наталья Ч.</div>
+                                       <div class="review__author-rating">
+                                          <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                                       </div>
+                                       <div class="review__author-date">2 июля 2025</div>
                                     </div>
-                                    <button type="button" class="review__text-button">еще</button>
                                  </div>
-                                 <div class="review__label">Отзыв Яндекс.Карты</div>
+                                 <div class="review__body">
+                                    <div class="review__text">
+                                       <div class="review__text-wrapper">Самая лучшая организация по созданию
+                                          кейсов!🙏🙏
+                                          Справились в короткий срок и при этом все сделали качественно и красиво😍
+                                          Большое Вам спасибо от всей души! Желаю Вам продолжать радовать клиентов!💎
+                                       </div>
+                                       <button type="button" class="review__text-button">еще</button>
+                                    </div>
+                                    <div class="review__label">Отзыв Яндекс.Карты</div>
+                                 </div>
                               </div>
                            </div>
-                        </div>
 
-                        <div class="reviews__slide swiper-slide">
-                           <div class="review">
-                              <div class="review__author">
-                                 <div class="review__author-photo">
-                                    <img src="img/partners/photo-2.webp" width="70" height="70" alt="photo">
-                                 </div>
-                                 <div class="review__author-info">
-                                    <div class="review__author-name">Наталья Ч.</div>
-                                    <div class="review__author-rating">
-                                       <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                           <div class="reviews__slide swiper-slide">
+                              <div class="review">
+                                 <div class="review__author">
+                                    <div class="review__author-photo">
+                                       <img src="img/partners/photo-2.webp" width="70" height="70" alt="photo">
                                     </div>
-                                    <div class="review__author-date">2 июля 2025</div>
+                                    <div class="review__author-info">
+                                       <div class="review__author-name">Renum</div>
+                                       <div class="review__author-rating">
+                                          <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                                       </div>
+                                       <div class="review__author-date">2 июля 2025</div>
+                                    </div>
                                  </div>
-                              </div>
-                              <div class="review__body">
-                                 <div class="review__text">
-                                    <div class="review__text-wrapper">Самая лучшая организация по созданию кейсов!🙏🙏
-                                       Справились в короткий срок и при этом все сделали качественно и красиво😍
-                                       Большое Вам спасибо от всей души! Желаю Вам продолжать радовать клиентов!💎</div>
-                                    <button type="button" class="review__text-button">еще</button>
+                                 <div class="review__body">
+                                    <div class="review__text">
+                                       <div class="review__text-wrapper">Заказывали два кофра на колёсах. Один под
+                                          коллаборационный робот, второй - под контроллер.
+                                          Цена - ниже, чем если покупать по частям и собирать самому. Сделали за 2 дня.
+                                          Привезли к нашему складу. Кофры очень
+                                          классные. Выдерживают даже стоящего человека 120кг и хоть бы хны. Вещь!!!
+                                       </div>
+                                       <button type="button" class="review__text-button">еще</button>
+                                    </div>
+                                    <div class="review__label">Отзыв Яндекс.Карты</div>
                                  </div>
-                                 <div class="review__label">Отзыв Яндекс.Карты</div>
                               </div>
                            </div>
-                        </div>
 
-                        <div class="reviews__slide swiper-slide">
-                           <div class="review">
-                              <div class="review__author">
-                                 <div class="review__author-photo">
-                                    <img src="img/partners/photo-2.webp" width="70" height="70" alt="photo">
-                                 </div>
-                                 <div class="review__author-info">
-                                    <div class="review__author-name">Renum</div>
-                                    <div class="review__author-rating">
-                                       <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                           <div class="reviews__slide swiper-slide">
+                              <div class="review">
+                                 <div class="review__author">
+                                    <div class="review__author-photo"></div>
+                                    <div class="review__author-info">
+                                       <div class="review__author-name">Валентина</div>
+                                       <div class="review__author-rating">
+                                          <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                                       </div>
+                                       <div class="review__author-date">2 июля 2025</div>
                                     </div>
-                                    <div class="review__author-date">2 июля 2025</div>
                                  </div>
-                              </div>
-                              <div class="review__body">
-                                 <div class="review__text">
-                                    <div class="review__text-wrapper">Заказывали два кофра на колёсах. Один под
-                                       коллаборационный робот, второй - под контроллер.
-                                       Цена - ниже, чем если покупать по частям и собирать самому. Сделали за 2 дня.
-                                       Привезли к нашему складу. Кофры очень
-                                       классные. Выдерживают даже стоящего человека 120кг и хоть бы хны. Вещь!!!</div>
-                                    <button type="button" class="review__text-button">еще</button>
+                                 <div class="review__body">
+                                    <div class="review__text">
+                                       <div class="review__text-wrapper">Заказывала здесь демо-чемодан для панелей с
+                                          образцами. Задача была непростая - в короткие сроки создать кейс под панели,
+                                          которые сами еще существовали только в виде макета. Сотрудники компании
+                                          справились с ней на отлично!
+                                          Отдельное спасибо Майе за помощь в организации доставки)</div>
+                                       <button type="button" class="review__text-button">еще</button>
+                                    </div>
+                                    <div class="review__label">Отзыв Яндекс.Карты</div>
                                  </div>
-                                 <div class="review__label">Отзыв Яндекс.Карты</div>
                               </div>
                            </div>
-                        </div>
 
-                        <div class="reviews__slide swiper-slide">
-                           <div class="review">
-                              <div class="review__author">
-                                 <div class="review__author-photo"></div>
-                                 <div class="review__author-info">
-                                    <div class="review__author-name">Валентина</div>
-                                    <div class="review__author-rating">
-                                       <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                           <div class="reviews__slide swiper-slide">
+                              <div class="review">
+                                 <div class="review__author">
+                                    <div class="review__author-photo"></div>
+                                    <div class="review__author-info">
+                                       <div class="review__author-name">Влада Е.</div>
+                                       <div class="review__author-rating">
+                                          <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
+                                       </div>
+                                       <div class="review__author-date">2 июля 2025</div>
                                     </div>
-                                    <div class="review__author-date">2 июля 2025</div>
                                  </div>
-                              </div>
-                              <div class="review__body">
-                                 <div class="review__text">
-                                    <div class="review__text-wrapper">Заказывала здесь демо-чемодан для панелей с
-                                       образцами. Задача была непростая - в короткие сроки создать кейс под панели,
-                                       которые сами еще существовали только в виде макета. Сотрудники компании
-                                       справились с ней на отлично!
-                                       Отдельное спасибо Майе за помощь в организации доставки)</div>
-                                    <button type="button" class="review__text-button">еще</button>
+                                 <div class="review__body">
+                                    <div class="review__text">
+                                       <div class="review__text-wrapper">Искали подрядчиков, которые смогут нам помочь с
+                                          выполнением кейсов. Эти ребята настолько оперативно взялись за задачу и
+                                          выполнили ее на 5+. Обязательно будем обращаться еще!</div>
+                                       <button type="button" class="review__text-button">еще</button>
+                                    </div>
+                                    <div class="review__label">Отзыв Яндекс.Карты</div>
                                  </div>
-                                 <div class="review__label">Отзыв Яндекс.Карты</div>
                               </div>
                            </div>
-                        </div>
 
-                        <div class="reviews__slide swiper-slide">
-                           <div class="review">
-                              <div class="review__author">
-                                 <div class="review__author-photo"></div>
-                                 <div class="review__author-info">
-                                    <div class="review__author-name">Влада Е.</div>
-                                    <div class="review__author-rating">
-                                       <img src="img/partners/stars.svg" width="150" height="30" alt="stars">
-                                    </div>
-                                    <div class="review__author-date">2 июля 2025</div>
-                                 </div>
-                              </div>
-                              <div class="review__body">
-                                 <div class="review__text">
-                                    <div class="review__text-wrapper">Искали подрядчиков, которые смогут нам помочь с
-                                       выполнением кейсов. Эти ребята настолько оперативно взялись за задачу и
-                                       выполнили ее на 5+. Обязательно будем обращаться еще!</div>
-                                    <button type="button" class="review__text-button">еще</button>
-                                 </div>
-                                 <div class="review__label">Отзыв Яндекс.Карты</div>
-                              </div>
-                           </div>
                         </div>
-
                      </div>
                   </div>
 
@@ -2197,8 +2217,8 @@
 </div>
    
 
-   <script src="js/app.js?_v=20261007174413"></script>
-   <script src="js/send.js?_v=20261007174413"></script>
+   <script src="js/app.js?_v=20261009164442"></script>
+   <script src="js/send.js?_v=20261009164442"></script>
 
    <script>
       window.addEventListener("load", () => {
