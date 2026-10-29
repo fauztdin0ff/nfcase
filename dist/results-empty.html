@@ -26,9 +26,9 @@
    <meta property="og:image:width" content="400">
    <meta property="og:image:height" content="400">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/form-sender.css?_v=20261028212012">
-   <link rel="stylesheet" href="css/base.min.css?_v=20261028212012">
-   <link rel="stylesheet" href="css/style.min.css?_v=20261028212012">
+   <link rel="stylesheet" href="css/form-sender.css?_v=20261029222924">
+   <link rel="stylesheet" href="css/base.min.css?_v=20261029222924">
+   <link rel="stylesheet" href="css/style.min.css?_v=20261029222924">
    <title>Производство</title>
 </head>
 
@@ -655,7 +655,7 @@
 </div>
 
 <!-- buy popup-->
-<div id="buy-popup" class="callback-popup popup" role="dialog" aria-modal="true" data-lenis-prevent>
+<div id="order-popup" class="callback-popup popup" role="dialog" aria-modal="true" data-lenis-prevent>
    <div class="popup__body">
       <div class="popup__title section-title">Оформите заказ</div>
       <div class="popup__subtitle section-subtitle">Оставьте свои данные — мы свяжемся с вами для подтверждения</div>
@@ -683,6 +683,13 @@
                <div class="field required">
                   <label for="email2">Email</label>
                   <input type="email" id="email2" name="email" autocomplete="email">
+               </div>
+            </div>
+
+            <div class="form__row">
+               <div class="field required">
+                  <label for="product">Товар</label>
+                  <input type="text" id="product" name="product" value="Кейс для лютни" disabled>
                </div>
             </div>
 
@@ -747,8 +754,8 @@
 </div>
    
 
-   <script src="js/app.js?_v=20261028212012"></script>
-   <script src="js/send.js?_v=20261028212012"></script>
+   <script src="js/app.js?_v=20261029222924"></script>
+   <script src="js/send.js?_v=20261029222924"></script>
 
    <script>
       window.addEventListener("load", () => {

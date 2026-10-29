@@ -26,9 +26,9 @@
    <meta property="og:image:width" content="400">
    <meta property="og:image:height" content="400">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/form-sender.css?_v=20261028212012">
-   <link rel="stylesheet" href="css/base.min.css?_v=20261028212012">
-   <link rel="stylesheet" href="css/style.min.css?_v=20261028212012">
+   <link rel="stylesheet" href="css/form-sender.css?_v=20261029222924">
+   <link rel="stylesheet" href="css/base.min.css?_v=20261029222924">
+   <link rel="stylesheet" href="css/style.min.css?_v=20261029222924">
    <title>Подкатегория</title>
 </head>
 
@@ -692,9 +692,9 @@
                      <div class="subcategory__products">
 
                         <div class="product-card">
-                           <div class="product-card__image">
+                           <a href="product.html" class="product-card__image">
                               <img src="img/products/product-1.avif" width="365" height="280" alt="product">
-                           </div>
+                           </a>
                            <div class="product-card__info">
                               <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
                               <div class="product-card__name">
@@ -707,15 +707,16 @@
                                  большого размера.
                               </div>
                               <div class="product-card__button">
-                                 <a href="" class="btn">Заказать похожий</a>
+                                 <button type="button" class="btn open-popup" data-popup="order-popup">Заказать
+                                    похожий</button>
                               </div>
                            </div>
                         </div>
 
                         <div class="product-card">
-                           <div class="product-card__image">
+                           <a href="product.html" class="product-card__image">
                               <img src="img/products/product-2.avif" width="365" height="280" alt="product">
-                           </div>
+                           </a>
                            <div class="product-card__info">
                               <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
                               <div class="product-card__name">
@@ -728,15 +729,16 @@
                                  для удобства транспортировки.
                               </div>
                               <div class="product-card__button">
-                                 <a href="" class="btn">Заказать похожий</a>
+                                 <button type="button" class="btn open-popup" data-popup="order-popup">Заказать
+                                    похожий</button>
                               </div>
                            </div>
                         </div>
 
                         <div class="product-card">
-                           <div class="product-card__image">
+                           <a href="product.html" class="product-card__image">
                               <img src="img/products/product-3.avif" width="365" height="280" alt="product">
-                           </div>
+                           </a>
                            <div class="product-card__info">
                               <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
                               <div class="product-card__name">
@@ -746,15 +748,16 @@
                                  Выполнен из серебристого алюминиевого композита толщиной 4 мм.
                               </div>
                               <div class="product-card__button">
-                                 <a href="" class="btn">Заказать похожий</a>
+                                 <button type="button" class="btn open-popup" data-popup="order-popup">Заказать
+                                    похожий</button>
                               </div>
                            </div>
                         </div>
 
                         <div class="product-card">
-                           <div class="product-card__image">
+                           <a href="product.html" class="product-card__image">
                               <img src="img/products/product-4.avif" width="365" height="280" alt="product">
-                           </div>
+                           </a>
                            <div class="product-card__info">
                               <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
                               <div class="product-card__name">
@@ -766,15 +769,16 @@
                                  Имеются специализированные ящики для хранения замка хай-хэта...
                               </div>
                               <div class="product-card__button">
-                                 <a href="" class="btn">Заказать похожий</a>
+                                 <button type="button" class="btn open-popup" data-popup="order-popup">Заказать
+                                    похожий</button>
                               </div>
                            </div>
                         </div>
 
                         <div class="product-card">
-                           <div class="product-card__image">
+                           <a href="product.html" class="product-card__image">
                               <img src="img/products/product-5.avif" width="365" height="280" alt="product">
-                           </div>
+                           </a>
                            <div class="product-card__info">
                               <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
                               <div class="product-card__name">
@@ -785,15 +789,16 @@
                                  при перевозке.
                               </div>
                               <div class="product-card__button">
-                                 <a href="" class="btn">Заказать похожий</a>
+                                 <button type="button" class="btn open-popup" data-popup="order-popup">Заказать
+                                    похожий</button>
                               </div>
                            </div>
                         </div>
 
                         <div class="product-card">
-                           <div class="product-card__image">
+                           <a href="product.html" class="product-card__image">
                               <img src="img/products/product-6.avif" width="365" height="280" alt="product">
-                           </div>
+                           </a>
                            <div class="product-card__info">
                               <div class="product-card__sku">Артикул: HB-INCTK-805502</div>
                               <div class="product-card__name">
@@ -805,7 +810,8 @@
                                  транспортировочный кофр.
                               </div>
                               <div class="product-card__button">
-                                 <a href="" class="btn">Заказать похожий</a>
+                                 <button type="button" class="btn open-popup" data-popup="order-popup">Заказать
+                                    похожий</button>
                               </div>
                            </div>
                         </div>
@@ -1094,7 +1100,7 @@
 </div>
 
 <!-- buy popup-->
-<div id="buy-popup" class="callback-popup popup" role="dialog" aria-modal="true" data-lenis-prevent>
+<div id="order-popup" class="callback-popup popup" role="dialog" aria-modal="true" data-lenis-prevent>
    <div class="popup__body">
       <div class="popup__title section-title">Оформите заказ</div>
       <div class="popup__subtitle section-subtitle">Оставьте свои данные — мы свяжемся с вами для подтверждения</div>
@@ -1122,6 +1128,13 @@
                <div class="field required">
                   <label for="email2">Email</label>
                   <input type="email" id="email2" name="email" autocomplete="email">
+               </div>
+            </div>
+
+            <div class="form__row">
+               <div class="field required">
+                  <label for="product">Товар</label>
+                  <input type="text" id="product" name="product" value="Кейс для лютни" disabled>
                </div>
             </div>
 
@@ -1186,8 +1199,8 @@
 </div>
    
 
-   <script src="js/app.js?_v=20261028212012"></script>
-   <script src="js/send.js?_v=20261028212012"></script>
+   <script src="js/app.js?_v=20261029222924"></script>
+   <script src="js/send.js?_v=20261029222924"></script>
 
    <script>
       window.addEventListener("load", () => {
